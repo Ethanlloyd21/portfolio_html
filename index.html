@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lloyd Marcelino – Résumé</title>
+    <!-- Google Font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <!-- Local styles -->
+    <link rel="stylesheet" href="./css/test.css" />
+    <link rel="stylesheet" href="./css/animation.css" />
+  </head>
+  <body>
+    <!-- =================== HEADER =================== -->
+    <header class="navbar">
+      <h1>Lloyd Marcelino – Senior Software Engineer</h1>
+      <!-- div to hold current date -->
+      <div id="currentDate" aria-label="Current date"></div>
+      <hr />
+      <!-- Simple Site‑wide Navigation -->
+      <nav aria-label="Portfolio navigation">
+        <ul>
+          <li><a href="index.html">Résumé</a></li>
+          <li><a href="cover-letter.html">Cover Letter</a></li>
+          <li><a href="career-goals.html">Career Goals</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- =================== MAIN CONTENT =================== -->
+    <main class="container">
+      <!-- ===== Sidebar (personal details) ===== -->
+      <aside class="sidebar" aria-label="Personal details">
+        <article class="card">
+          <img
+            class="profile-pic"
+            src="https://www.w3schools.com/w3images/avatar_hat.jpg"
+            alt="Portrait of Lloyd Marcelino"
+          />
+          <h2>Contact</h2>
+          <p>🏠 Dallas, TX<br />✉ lmarce6@wgu.edu<br />☎ (555) 555‑5555</p>
+          <p>
+            💻
+            <a
+              href="https://www.linkedin.com/in/lloydmarcelino619/"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+            <br />🖱️
+            <a
+              href="https://github.com/Ethanlloyd21"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+          </p>
+
+          <!-- Unordered list of soft skills -->
+          <h3>Core Strengths</h3>
+          <ul>
+            <li>Leadership &amp; Mentorship</li>
+            <li>Agile &amp; DevOps Advocacy</li>
+            <li>Cloud‑Native Architecture</li>
+          </ul>
+        </article>
+      </aside>
+
+      <!-- ===== Professional experience, education, skills ===== -->
+      <section class="main">
+        <!-- Work experience -->
+        <article class="card experience">
+          <h2>Work Experience</h2>
+          <div class="job">
+            <h4>Senior Software Engineer – Lockheed Martin</h4>
+            <small
+              >📅 Oct&nbsp;2023 – <span class="current">Current</span></small
+            >
+            <p>
+              <strong>Driving next‑generation solutions</strong> through Agile,
+              DevOps and microservices.
+              <em
+                >Specialized in React, Java, CI/CD, REST APIs and OpenShift.</em
+              >
+            </p>
+          </div>
+          <div class="job">
+            <h4>Full‑Stack Engineer / AWS Developer – Freelance</h4>
+            <small
+              >📅 May&nbsp;2020 – <span class="current">Current</span></small
+            >
+            <p>
+              Built serverless applications with React, Node and AWS (SAM, CDK,
+              Amplify, API Gateway, Lambda, DynamoDB, AppSync).
+            </p>
+          </div>
+          <div class="job">
+            <h4>
+              Software Developer – Pacific Science&nbsp;&amp;&nbsp;Engineering
+            </h4>
+            <small>📅 Aug&nbsp;2022 – Sept&nbsp;2023</small>
+            <p>
+              Developed secure cloud‑native solutions and Infrastructure‑as‑Code
+              pipelines.
+            </p>
+          </div>
+          <div class="job">
+            <h4>Systems Support Engineer – Amazon</h4>
+            <small>📅 Mar&nbsp;2015 – Aug&nbsp;2022</small>
+            <p>
+              Created technical documentation and blueprints, built scalable
+              apps with React&nbsp;JS and Node on AWS, mentored colleagues in
+              cloud best practices.
+            </p>
+          </div>
+        </article>
+
+        <!-- Education -->
+        <article class="card education">
+          <h2>Education</h2>
+          <div class="school">
+            <h4>Western Governors University</h4>
+            <small>2025</small>
+            <p>B.S. Software Engineering</p>
+          </div>
+          <div class="school">
+            <h4>University of Washington</h4>
+            <small>2019 – 2020</small>
+            <p>Full‑Stack Development Certificate</p>
+          </div>
+        </article>
+
+        <!-- Technical skills -->
+        <article class="card skills" id="technical-skills">
+          <h2>Technical Skills</h2>
+          <!-- Ordered list example -->
+          <ol>
+            <li>React / TypeScript – 98&nbsp;% proficiency</li>
+            <li>Java – 90&nbsp;% proficiency</li>
+            <li>Python – 75&nbsp;% proficiency</li>
+            <li>Node.js – 90&nbsp;% proficiency</li>
+            <li>SQL – 70&nbsp;% proficiency</li>
+          </ol>
+
+          <!-- Requirement: table with caption, 4 columns, 3 rows -->
+          <table>
+            <caption>
+              Proficiency Snapshot
+            </caption>
+            <thead>
+              <tr>
+                <th>Technology</th>
+                <th>Level</th>
+                <th>Years</th>
+                <th>Last Used</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>React</td>
+                <td>Expert</td>
+                <td>5</td>
+                <td>2025</td>
+              </tr>
+              <tr>
+                <td>Java</td>
+                <td>Advanced</td>
+                <td>6</td>
+                <td>2025</td>
+              </tr>
+              <tr>
+                <td>Python</td>
+                <td>Intermediate</td>
+                <td>4</td>
+                <td>2025</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+    </main>
+
+    <!-- =================== FOOTER =================== -->
+    <footer>
+      &copy; <span class="current">2025</span> Lloyd Marcelino. All rights
+      reserved.
+    </footer>
+
+    <!-- =================== SCRIPTS =================== -->
+    <script>
+      // Populate the current date in the header div
+      document.addEventListener("DOMContentLoaded", () => {
+        const dateEl = document.getElementById("currentDate");
+        if (dateEl) {
+          dateEl.textContent = new Date().toLocaleDateString();
+        }
+        // Console message for rubric requirement
+        console.log("Résumé loaded successfully.");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,220 @@
+/* ====================  GLOBAL RESET  ==================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg: #f5f7fa;
+    --primary: #009688;
+    --card-bg: #ffffff;
+    --text: #333333;
+    --muted: #666666;
+    --border: #e0e0e0;
+    --shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    --radius: 8px;
+    font-size: 16px;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* ====================  HEADER / NAV  ==================== */
+header.navbar {
+    background: var(--card-bg);
+    padding: 1rem 2rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+header.navbar h1 {
+    font-size: 1.75rem;
+    color: var(--primary);
+}
+
+#currentDate {
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+header.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header.navbar nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+header.navbar nav a:hover {
+    color: var(--primary);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border);
+}
+
+/* ====================  LAYOUT  ==================== */
+.container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sidebar {
+    flex: 0 0 280px;
+    animation: slide-in-left 0.7s ease-out forwards;
+}
+
+.main {
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* ====================  CARDS  ==================== */
+.card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1.5rem 2rem;
+}
+
+.card h2 {
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+/* Profile picture */
+.profile-pic {
+    width: 100%;
+    border-radius: var(--radius);
+    margin-bottom: 1rem;
+}
+
+/* ====================  EXPERIENCE & EDUCATION  ==================== */
+.experience {
+    animation: slide-in-right 0.7s ease-out forwards;
+}
+
+.education {
+    animation: slide-in-bottom 0.7s ease-out forwards;
+}
+
+/* ====================  TECHNICAL SKILLS  ==================== */
+/* Ensure the main skills card is visible and animated */
+.main .skills {
+    animation: slide-in-right 0.7s ease-out forwards;
+}
+
+#technical-skills ol {
+    margin-left: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+#technical-skills li {
+    margin-bottom: 0.35rem;
+}
+
+/* Table styling */
+#technical-skills table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+#technical-skills caption {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+#technical-skills th,
+#technical-skills td {
+    border: 1px solid var(--border);
+    padding: 0.5rem;
+    text-align: left;
+}
+
+#technical-skills thead {
+    background: var(--primary);
+    color: #fff;
+}
+
+/* ====================  FOOTER  ==================== */
+footer {
+    text-align: center;
+    padding: 1rem 0 2rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+/* ====================  ANIMATIONS  ==================== */
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-120%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(120%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-bottom {
+    0% {
+        transform: translateY(120%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* ====================  MEDIA QUERIES  ==================== */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex: unset;
+        width: 100%;
+        order: 2;
+    }
+
+    .main .skills {
+        order: 3;
+    }
+}

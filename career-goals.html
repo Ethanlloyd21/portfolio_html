@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lloyd Marcelino – Career Goals</title>
+    <!-- Google Font for consistency -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <!-- Shared site styles -->
+    <link rel="stylesheet" href="./css/test.css" />
+    <link rel="stylesheet" href="./css/animation.css" />
+    <!-- Tiny local tweak to showcase CSS skills -->
+    <style>
+      .media-grid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        margin-bottom: 2rem;
+      }
+      .media-grid img,
+      .media-grid video {
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+      }
+      form.contact-form {
+        display: grid;
+        gap: 1rem;
+        max-width: 600px;
+      }
+      form.contact-form label {
+        font-weight: 500;
+      }
+      form.contact-form input,
+      form.contact-form textarea,
+      form.contact-form select {
+        padding: 0.5rem 0.75rem;
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        font-family: inherit;
+      }
+      form.contact-form button {
+        background: var(--primary);
+        color: #fff;
+        border: none;
+        padding: 0.75rem 1.25rem;
+        border-radius: 6px;
+        cursor: pointer;
+        width: fit-content;
+      }
+      form.contact-form button:hover {
+        opacity: 0.93;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ============ HEADER ============ -->
+    <header class="navbar">
+      <h1>Career Goals &amp; Development Plan</h1>
+      <hr />
+      <nav aria-label="Portfolio navigation">
+        <ul>
+          <li><a href="index.html">Résumé</a></li>
+          <li><a href="cover-letter.html">Cover Letter</a></li>
+          <li><a href="career-goals.html">Career Goals</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ============ MAIN ============ -->
+    <main class="container">
+      <section class="main" style="width: 100%">
+        <article
+          class="card"
+          style="animation: slide-in-right 0.7s ease-out forwards"
+        >
+          <h2>Vision for the Next 5 Years</h2>
+          <p>
+            My core objective is to evolve into a
+            <strong>Principal Engineer</strong> who bridges strategy and
+            hands‑on delivery, while championing
+            <em>developer experience</em> and sustainable DevOps practices
+            across cross‑functional teams.
+          </p>
+          <ul>
+            <li>Earn AWS Solutions Architect Professional certification.</li>
+            <li>
+              Lead architecture for at least two high‑impact cloud programs.
+            </li>
+            <li>
+              Publish technical articles &amp; present at industry conferences.
+            </li>
+            <li>
+              Mentor junior engineers to cultivate the next generation of
+              leaders.
+            </li>
+          </ul>
+
+          <!-- Showcase media skills -->
+          <div class="media-grid">
+            <figure>
+              <img
+                src="https://placekitten.com/640/360"
+                alt="Inspiration – growth mindset"
+              />
+              <figcaption style="text-align: center">Growth Mindset</figcaption>
+            </figure>
+            <figure>
+              <video
+                controls
+                muted
+                poster="https://via.placeholder.com/640x360?text=Career+Journey"
+              >
+                <source
+                  src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+              <figcaption style="text-align: center">
+                A short clip summarizing my journey
+              </figcaption>
+            </figure>
+            <figure>
+              <audio controls>
+                <source
+                  src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
+                  type="audio/mpeg"
+                />
+                Your browser does not support the audio element.
+              </audio>
+              <figcaption style="text-align: center">
+                Podcast snippet – thoughts on lifelong learning
+              </figcaption>
+            </figure>
+          </div>
+
+          <h2>Contact Me</h2>
+          <form
+            class="contact-form"
+            action="https://wp.zybooks.com/form-viewer.php"
+            method="post"
+          >
+            <label>
+              First Name
+              <input name="firstName" type="text" required />
+            </label>
+            <label>
+              Last Name
+              <input name="lastName" type="text" required />
+            </label>
+            <label>
+              Company Name
+              <input name="companyName" type="text" />
+            </label>
+            <label>
+              Email Address
+              <input name="email" type="email" required />
+            </label>
+            <label>
+              Phone Number
+              <input name="phone" type="tel" />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4"></textarea>
+            </label>
+
+            <!-- Best contact time radio group -->
+            <fieldset>
+              <legend>Best Contact Time</legend>
+              <label
+                ><input type="radio" name="contactTime" value="am" />
+                a.m.</label
+              >
+              <label
+                ><input type="radio" name="contactTime" value="pm" />
+                p.m.</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  name="contactTime"
+                  value="anytime"
+                  checked
+                />
+                Anytime</label
+              >
+            </fieldset>
+
+            <!-- Preferred contact method select -->
+            <label>
+              Preferred Contact Method
+              <select name="preferredMethod">
+                <option value="phone">Phone</option>
+                <option value="email" selected>Email</option>
+                <option value="text">Text</option>
+              </select>
+            </label>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </article>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+      &copy; <span class="current">2025</span> Lloyd Marcelino. All rights
+      reserved.
+    </footer>
+  </body>
+</html>

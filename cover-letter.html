@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lloyd Marcelino – Cover Letter</title>
+    <!-- Google Font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <!-- Shared styles (same as résumé) -->
+    <link rel="stylesheet" href="./css/test.css" />
+    <link rel="stylesheet" href="./css/animation.css" />
+    <!-- Local tweaks for letter spacing -->
+    <style>
+      /* Ensure comfortable spacing between cover‑letter paragraphs */
+      .letter-body p {
+        margin-bottom: 1.25rem;
+        line-height: 1.6;
+      }
+      /* Remove bottom margin on the last paragraph */
+      .letter-body p:last-child {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- =================== HEADER =================== -->
+    <header class="navbar">
+      <h1>Lloyd Marcelino – Senior Software Engineer</h1>
+      <div id="currentDate" aria-label="Current date"></div>
+      <hr />
+      <nav aria-label="Portfolio navigation">
+        <ul>
+          <li><a href="index.html">Résumé</a></li>
+          <li><a href="cover-letter.html">Cover Letter</a></li>
+          <li><a href="career-goals.html">Career Goals</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- =================== MAIN CONTENT =================== -->
+    <main class="container">
+      <!-- ===== Sidebar (same look as résumé) ===== -->
+      <aside class="sidebar" aria-label="Personal details">
+        <article class="card">
+          <img
+            class="profile-pic"
+            src="https://www.w3schools.com/w3images/avatar_hat.jpg"
+            alt="Portrait of Lloyd Marcelino"
+          />
+          <h2>Contact</h2>
+          <p>🏠 Dallas, TX<br />✉ lmarce6@wgu.edu<br />☎ (555) 555‑5555</p>
+          <p>
+            💻
+            <a
+              href="https://www.linkedin.com/in/lloydmarcelino619/"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+            <br />🖱️
+            <a
+              href="https://github.com/Ethanlloyd21"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+          </p>
+          <h3>Core Strengths</h3>
+          <ul>
+            <li>Leadership &amp; Mentorship</li>
+            <li>Agile &amp; DevOps Advocacy</li>
+            <li>Cloud‑Native Architecture</li>
+          </ul>
+        </article>
+      </aside>
+
+      <!-- ===== COVER LETTER SECTION ===== -->
+      <section class="main">
+        <article
+          class="card letter-body"
+          style="animation: slide-in-right 0.7s ease-out forwards"
+        >
+          <!-- Date span populated via JS -->
+          <p><span id="letterDate"></span></p>
+
+          <p>
+            Hiring Manager<br />
+            <mark>Innovative Tech Corp</mark><br />
+            1234 Innovation Way<br />
+            Dallas, TX 75201
+          </p>
+
+          <p>Dear <em>Hiring Manager</em>,</p>
+
+          <p>
+            I am writing to express my <strong>enthusiastic interest</strong> in
+            the <mark>Senior Software Engineer</mark> role at Innovative Tech
+            Corp. With six years of experience designing
+            <em>cloud‑native, scalable</em>
+            solutions and leading cross‑functional teams, I am confident in my
+            ability to help your organization accelerate its product roadmap.
+          </p>
+
+          <p>
+            In my current role at <strong>Lockheed Martin</strong>, I spearhead
+            the architecture of microservices on OpenShift, combining React
+            front‑ends and Java back‑ends. My focus on CI/CD automation has
+            shortened release cycles by 40 % and improved reliability. I also
+            freelance as an AWS developer, where I build serverless applications
+            that <em>seamlessly scale</em> to millions of requests.
+          </p>
+
+          <p>
+            I am drawn to Innovative Tech Corp’s reputation for
+            <mark>cutting‑edge research</mark> and user‑centric products. I
+            thrive in collaborative environments where innovation and customer
+            impact are paramount, and I am eager to bring my expertise in React,
+            TypeScript, Java, and DevOps to your talented team.
+          </p>
+
+          <p>
+            Thank you for considering my application. I look forward to the
+            opportunity to discuss how my skills align with your goals.
+          </p>
+
+          <p>
+            Sincerely,<br />
+            <strong>Lloyd Marcelino</strong>
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <!-- =================== FOOTER =================== -->
+    <footer>
+      &copy; <span class="current">2025</span> Lloyd Marcelino. All rights
+      reserved.
+    </footer>
+
+    <!-- =================== SCRIPTS =================== -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Populate header date
+        const headerDate = document.getElementById("currentDate");
+        if (headerDate) {
+          headerDate.textContent = new Date().toLocaleDateString();
+        }
+        // Populate cover‑letter date
+        const letterDate = document.getElementById("letterDate");
+        if (letterDate) {
+          const options = { year: "numeric", month: "long", day: "numeric" };
+          letterDate.textContent = new Date().toLocaleDateString(
+            undefined,
+            options
+          );
+        }
+        console.log("Cover letter loaded successfully.");
+      });
+    </script>
+  </body>
+</html>
